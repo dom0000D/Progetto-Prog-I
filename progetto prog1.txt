@@ -1,0 +1,118 @@
+<html>
+<head>
+<title> PROGETTO PROGRAMMAZIONE 1. </title>
+</head>
+<html>
+<head>
+<title> PROGETTO PROGRAMMAZIONE 1. </title>
+</head>
+<body>
+
+
+<p align=left> Alunno:Ferraro Dominick </p>
+<p align=right> Matricola: 0124002048 </p>
+<p align=right> A/A: 2019-2020 </p>
+
+  <center>   <img src="a.gif" width="200" height="200"> </center>
+<hr>
+<center> <h1> PROGETTO PROGRAMMAZIONE 1 </h1> </center>
+<p><B> Ecco riportata la prima traccia del progetto assegnatomi: <br>
+1. Scacchi: Implementare un algoritmo legato al gioco degli scacchi. L’algoritmo considera una scacchiera regolamentare (8x8 caselle bianche e nere, casella nera in basso a sinistra), dispone a caso (usando la function rand) 8 Pedoni bianchi (per semplicità, possono stare in una qualunque casella non occupata da un altro pezzo) e poi dispone a caso (usando la function rand) una Regina nera (può stare in una qualunque casella non occupata da un altro pezzo). L’algoritmo deve visualizzare la scacchiera, mostrando una ‘b’ e una ‘n’ per le caselle bianche e nere non occupate, mostrando una ‘P’ nelle caselle occupate dai Pedoni e una ‘R’ per la casella occupata dalla Regina. L’algoritmo determina, in base alla posizione di tutti i pezzi sulla scacchiera, quali sono i Pedoni che possono essere catturati da uno qualunque dei possibili movimenti della Regina. Fare attenzione al fatto che un Pedone potrebbe essere “protetto” da un altro Pedone e che i Pedoni “protetti” non possono essere catturati. Infine l’algoritmo visualizza l’elenco dei Pedoni catturabili, precisando anche da quale pezzo sono catturabili e utilizzando la notazione usuale delle posizioni nel gioco degli scacchi, ovvero scrivendo, per esempio: Pedone in a3 catturabile da Regina in b4, Pedone in d6 catturabile da Regina in b4,….. Ricordare che nella notazione usuale degli scacchi le righe della scacchiera sono indicate mediante numeri interi (da 1 ad 8, dal basso verso l’alto), mentre le colonne sono indicate mediante lettere dell’alfabeto (da ‘a’ ad ‘h’ da sinistra a destra) e che la notazione prevede di indicare prima la lettera (colonna) e poi il numero (riga).<br></B></p>
+
+
+<p> <B><ul>Iniziamo a dichiarare le librerie che andremo ad utilizzare e scriviamo i nostri protoipi di funzione che permetteranno lo svolgimento del progetto. </B> </p>
+
+<img src="prima.jpeg"  height="600"> 
+
+<p> <B> Dichiariamo ora la nostra scacchiera che sarà una matrice 8x8 dove posizioneremo i pedoni bianchi (b) e i pedoni neri (n). </B> </p>
+<img src="foto2.jpeg" height="300">
+
+<p><B> Inizializziamo il contatore ed eseguiamo un ciclo while che ripete il ciclo finchè la condizione resta soddisfatta.
+Posiziona randomicamente i pedoni nella matrice, facendo attenzione a non sovrapporre eventuali pedoni. Alla fine il contatore viene autoincrementato. </B> </p> 
+<img src="foto3.jpeg" width="1400" height="600">
+<p><B> Azzeriamo nuovamente il contatore in modo da poterlo utilizzare di nuovo.
+Abbiamo poi un altro ciclo while che posiziona in modo casuale la REGINA nella matrice, facendo attenzione a non eliminare eventuali pedoni.</B> </p>
+<img src="foto4.jpeg">
+
+<p><B> Stampiamo la posizione della regina. </B></p>
+<img src="stamparegina.jpeg" width="1000" >
+<p><B> Richiamiamo tutte le nostre funzioni precedentemente scritte.</B> </p>
+<img src="richiamo.jpeg">
+
+<p><B> Attiviamo la funzione "printfscacchi" a cui passiamo la nostra scacchiera di char. </B> </p>
+<img src="scacchiera.jpg">
+
+<p><B> Andiamo ad implementare le funzioni che permetteranno il movimento (su,giù,destra,sinistra,diagonale). <br> 
+Pedone su e giù:</B></p>
+<img src="pedone sugiu.jpeg" width="1400" height="600">
+<p><B> Pedone destra e sinistra: </B></p>
+<img src="pedone destra.jpeg"width="1400" height="600">
+<p><B> Infine i movimenti in diagonale:</B></p>
+<img src="diag12.jpeg"width="1400" height="600">
+<img src="diag34.jpeg"width="1400" height="600">
+
+<p><B> Ecco ora diverse simulazioni effettuate: </B></p>
+<img src="1.jpeg"> <br> 
+<hr>
+<img src="2.jpeg"> <br>
+<hr>
+<img src="3.jpeg"> <br>
+<hr>
+<img src="4.jpeg"></ul>
+<br>
+<hr>
+<p><B> Passiamo ora alla seconda parte del progetto:  Scaffale rivista musicale automatizzata, ecco la traccia: <br>
+Si vuole simulare la gestione automatizzata di uno scaffale di riviste musicali. Si suppone di avere un massimo di n tipi di riviste con il proprio titolo, codice identificativo, prezzo, quantità in scorta, il genere specifico della rivista (jazz, rock, pop, punk, ...) e dagli strumenti trattati (batteria, chitarra, tromba … fino ad un massimo di m).   Permettere all’utente di: <br> • Acquistare se è possibile una rivista dato il nome (controllare se la quantità è zero).<br>• Dato un genere visualizzare tutte le riviste corrispondenti.<br>• Dato un strumento musicale visualizzare le riviste, in cui è inserito, con il costo e la disponibilità. 
+ 
+Provvedere all’implementazione dell’algoritmo per la simulazione ed effettuare almeno un test per ognuna delle opzioni richieste dall’utente.  </B></p>
+<hr>
+<p><B> Iniziamo a dichiarare la struct "SCAFFALE" con il codice identificativo, il titolo, il prezzo, la quantità, i generi musicali e gli strumenti.</B></p>
+<img src="struct.png" width="1400" height="600">
+<p><B> Passiamo ora al nostro main dove dichiariamo diverse variabili che ci serviranno per la funzione "scanf".<br>
+In seguito con un ciclo for stampiamo tutte le riviste e i prezzi a disposizione e alla fine abbiamo le 3 possibilità con le quali l'utente può interagire digitando il numero.</B></p>
+<img src="main.png"width="1400" height="500">
+<p><B> Abbiamo ora i 3 casi di switch:analizziamoli uno per uno. <br>
+CASO 1: chiediamo all'utente la rivista che vuole comprare, se disponibile si prosegue con l'acquisto oppure il nostro programma dirà che la rivista non è più disponibile.</B></p>
+<img src="switch1.png" width="1400" hieght="400">
+<p><B> Il secondo caso chiede all'utente di inserire un genere musicale per visualizzare le riviste corrispondenti.</B></p>
+<img src="switch2.png" width="1400" height="400">
+<p><B> Il terzo e ultimo caso chiede all'utente di inserire degli strumenti musicali per visualizzare la rivista associata, il prezzo e la disponibilità.</B></p>
+<img src="fine.png" width="1400" height="500">
+
+<p><B> Vediamo ora la simulazione dei 3 casi. </B></p> <br>
+<hr>
+
+<p><B> CASO 1</B></p>
+<img src="caso1.png"width="1400" height="300">
+<br>
+<br>
+<hr>
+<img src="caso1.1.png"width="1400" height="300">
+<br>
+<p><B> CASO 2</B></p>
+
+<img src="caso2.png"width="1400" height="300">
+<br>
+<br>
+<hr>
+<img src="caso2.1.png"width="1400" height="300">
+
+<br>
+<p><B> CASO 3</B></p>
+<img src="caso3.png"width="1400" height="300">
+<br>
+<br>
+<hr>
+<img src="caso 3.1.png"width="1400" height="300">
+
+
+
+
+
+
+
+
+
+
+
+
